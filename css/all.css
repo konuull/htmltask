@@ -1,0 +1,470 @@
+header {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+header .container {
+  min-width: 1000px;
+}
+header .container::before header .container::after {
+  display: table;
+  content: " ";
+}
+header .container::after {
+  clear: both;
+}
+header .nav::before, header .nav::after {
+  display: table;
+  content: " ";
+}
+header .nav::after {
+  clear: both;
+}
+header .topHeader {
+  background: rgb(22, 56, 74);
+  background: linear-gradient(180deg, rgb(22, 56, 74) 0%, rgb(18, 74, 105) 100%);
+  border-bottom: 5px solid #d69d36;
+  height: 35px;
+}
+header .topHeader .clearFix {
+  clear: both;
+}
+header .topHeader .container .width400 {
+  width: 400px;
+  text-align: right;
+  float: right;
+  border: 0 solid #000;
+  padding: 0;
+}
+header .topHeader .container .width400 a {
+  padding: 4px;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+header .topHeader .container .width400 a:is(:hover, :focus, :active) {
+  color: yellow;
+  text-decoration: underline;
+}
+header .topHeader .container .width400 ul {
+  list-style: none;
+  padding: 0;
+  display: inline;
+  margin-left: 40px;
+}
+header .topHeader .container .width400 ul li {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  padding: 4px 2px;
+}
+header .topHeader .container .width400 ul li.active a {
+  background-color: #fff;
+  color: black;
+  outline: 1px solid #fff;
+}
+header .topHeader .container .width400 ul li a {
+  color: white;
+  text-decoration: none;
+}
+header .centerHeader {
+  position: relative;
+  padding: 0px 250px;
+}
+header .centerHeader::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: #d69d36;
+  height: 3px;
+}
+header .centerHeader .imgBg {
+  width: 100%;
+  height: auto;
+}
+header .bottomHeader .nav {
+  margin: 10px auto 20px;
+}
+header .bottomHeader .nav .dropdown {
+  background-image: url("http://tpl.bdu.az/bsueduaz2/assets/img/FFFFFF-0.9.png");
+  font-weight: 200;
+  min-width: 230px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 5;
+  height: 0;
+  transition: all 0.3s ease-in-out;
+}
+header .bottomHeader .nav .dropdown li {
+  margin-top: 4px;
+  box-sizing: border-box;
+  padding: 5px 22px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+header .bottomHeader .nav .dropdown li:first-child {
+  margin-top: 20px;
+}
+header .bottomHeader .nav .dropdown li:first-child a {
+  color: #2b2b2b;
+  margin-top: 5px;
+  font-size: 1em !important;
+}
+header .bottomHeader .nav .dropdown li:is(:hover, :focus) {
+  background: rgba(0, 0, 0, 0.3);
+}
+header .bottomHeader .nav .dropdown li:is(:hover, :focus) a {
+  color: #fff;
+}
+header .bottomHeader .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header .bottomHeader .nav ul .list_menu {
+  float: left;
+  font-weight: bold;
+  padding: 0 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+header .bottomHeader .nav ul .list_menu a {
+  color: #555;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 200;
+}
+header .bottomHeader .nav ul .list_menu a.underline {
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+header .bottomHeader .nav ul .list_menu:is(:hover, :focus) a.underline {
+  border-bottom: 2px solid #2b2b2b;
+}
+header .bottomHeader .nav ul .list_menu:is(:hover, :focus) .dropdown {
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.carousel .carousel-indicators {
+  bottom: 30px;
+}
+.carousel .carousel-indicators button {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.carousel .carousel-indicators button.active {
+  background-color: #fff;
+}
+.carousel .carousel-inner .carousel-caption {
+  left: 0;
+  right: auto;
+  display: flex;
+  width: auto;
+  background-color: #747070;
+  text-align: left;
+  padding: 30px 20px;
+}
+.carousel .carousel-inner .carousel-caption .left h5 {
+  font-size: 14px;
+  font-weight: 200;
+  width: 80%;
+}
+.carousel .carousel-inner .carousel-caption .right {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+.carousel .carousel-inner .carousel-caption .right i {
+  font-size: 40px;
+}
+
+.garabag img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+.news-second-block {
+  margin-top: 30px;
+  padding: 0 0 30px;
+}
+.news-second-block .container {
+  min-width: 1000px;
+}
+.news-second-block .container::before, .news-second-block .container::after {
+  display: table;
+  content: " ";
+}
+.news-second-block .container::after {
+  clear: both;
+}
+.news-second-block .row::before, .news-second-block .row::after {
+  display: table;
+  content: " ";
+}
+.news-second-block .row::after {
+  clear: both;
+}
+.news-second-block .container .news-second-rowflex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+.news-second-block .container .news-second-rowflex > [class*=col-] {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.news-second-block .container .news-second-rowflex img {
+  display: block;
+  width: 100%;
+  height: 110px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.news-second-block .container .news-second-rowflex .news-second-title {
+  font-weight: bold;
+  padding: 10px 0;
+}
+.news-second-block .container .news-second-rowflex .news-second-allnews {
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: 10px;
+  text-align: right;
+  color: #487f94;
+  cursor: pointer;
+}
+
+.middle {
+  padding: 30px 0;
+}
+.middle .container {
+  min-width: 1000px;
+}
+.middle .container::before, .middle .container::after {
+  display: table;
+  content: " ";
+}
+.middle .container::after {
+  clear: both;
+}
+.middle .row::before, .middle .row::after {
+  display: table;
+  content: " ";
+}
+.middle .row::after {
+  clear: both;
+}
+.middle .container .row {
+  margin-bottom: 15px;
+}
+.middle .container .row .box {
+  float: left;
+}
+.middle .container .row .box .small-tile, .middle .container .row .box .midle_section .large-tile {
+  box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+.middle .container .row .box .tile-img {
+  width: 100%;
+  background: white;
+  height: 110px;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+.middle .container .row .box .fac .tile-title {
+  background: #483018;
+  border-bottom: 3px solid #483018;
+}
+.middle .container .row .box .labaratory .tile-title {
+  background: #3a3e4b;
+  border-bottom: 3px solid #3a3e4b;
+}
+.middle .container .row .box .tile-title {
+  height: 40px;
+  position: relative;
+  vertical-align: middle;
+  line-height: 40px;
+  font-size: 1em;
+  font-weight: 200;
+  color: #fff;
+  text-decoration: none !important;
+  padding: 0 10px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.middle .container .row .box .yayin-evi .tile-title {
+  background: #9d7f4f;
+  border-bottom: 3px solid #9d7f4f;
+}
+.middle .container .row .box .yayin-evi .tile-title {
+  background: #9d7f4f;
+  border-bottom: 3px solid #9d7f4f;
+}
+.middle .container .row .box .poliklinika .tile-title {
+  background: #c75348;
+  border-bottom: 3px solid #c75348;
+}
+.middle .container .row .box .library .tile-title {
+  background: #661c08;
+  border-bottom: 3px solid #661c08;
+}
+.middle .container .row .box .museum .tile-title {
+  background: #603d29;
+  border-bottom: 3px solid #603d29;
+}
+.middle .container .row .box .video .tile-title {
+  background: #777;
+  border-bottom: 3px solid #777;
+}
+.middle .container .row .box .docs .tile-title {
+  background: #635b8d;
+  border-bottom: 3px solid #635b8d;
+}
+.middle .container .row .box .vg .tile-title {
+  background: #035b67;
+  border-bottom: 3px solid #035b67;
+}
+.middle .container .row .box .small-tile {
+  height: 150px;
+}
+.middle .container .row .box .small-tile a {
+  color: white;
+  text-decoration: none;
+}
+
+.centers .container {
+  min-width: 1000px;
+}
+.centers .container::before, .centers .container::after {
+  display: table;
+  content: " ";
+}
+.centers .container::after {
+  clear: both;
+}
+.centers .row::before, .centers .row::after {
+  display: table;
+  content: " ";
+}
+.centers .row::after {
+  clear: both;
+}
+.centers .container .centers-title, .centers .container .graduates-title {
+  padding: 30px 0;
+}
+.centers .container .centers-title {
+  clear: both;
+  text-align: center;
+}
+.centers .container .centers-title .sun {
+  margin: 20px auto 0;
+  width: 360px;
+  height: 40px;
+  clear: both;
+}
+.centers .container .centers-title h3 {
+  clear: both;
+  color: #555;
+  font-size: 2em;
+  padding: 10px 0;
+  margin: 0;
+  font-weight: 400;
+}
+.centers .container a {
+  text-decoration: none;
+  color: #444;
+}
+.centers .container .box {
+  box-sizing: border-box;
+  position: relative;
+  background: #f4f4f4;
+  font-size: 1.1em;
+  height: 102px;
+  text-align: center;
+  padding: 20px 15px 0;
+  line-height: 25px;
+  box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid #808080;
+  transition: all 0.3s ease-in-out;
+}
+.centers .container .space .row {
+  margin-bottom: 15px;
+}
+
+.graduates {
+  margin-top: 70px;
+}
+.graduates .container {
+  min-width: 1000px;
+}
+.graduates .container::before, .graduates .container::after {
+  display: table;
+  content: " ";
+}
+.graduates .container::after {
+  clear: both;
+}
+.graduates .row::before, .graduates .row::after {
+  display: table;
+  content: " ";
+}
+.graduates .row::after {
+  clear: both;
+}
+.graduates .graduates-title {
+  padding: 30px 0;
+}
+.graduates .graduates-title .graduates-icon {
+  margin: 20px auto 0;
+  width: 360px;
+  height: 40px;
+  clear: both;
+}
+.graduates .graduates-title .graduates-icon img {
+  vertical-align: middle;
+}
+.graduates .graduates-title h3 {
+  clear: both;
+  color: #555;
+  font-size: 2em;
+  padding: 10px 0;
+  margin: 0;
+  text-align: center;
+}
+.graduates .col-lg-2 {
+  margin-bottom: 30px;
+}
+.graduates .col-lg-2 a {
+  color: #d69d36;
+}
+.graduates .col-lg-2 .imgmezun {
+  height: 150px;
+}
+.graduates .all-graduates-cont {
+  text-align: right;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+.graduates .all-graduates-cont a {
+  color: #d69d36;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  header .bottomHeader .nav ul .list_menu {
+    padding: 5px 10px;
+  }
+}/*# sourceMappingURL=all.css.map */
